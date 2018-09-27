@@ -17,16 +17,11 @@ int checkBinary(const int n) {
 
 int main() {
 
-	checkBinary(0);
-	checkBinary(1);
-	checkBinary(2);
-	checkBinary(3);
-	checkBinary(4);
-	checkBinary(5);
-	checkBinary(6);
-	checkBinary(7);
-	checkBinary(8);
-
+	# Не надо дублировать код. Проверить работу функции Вы могли бы и в цикле:
+	for (int i = 0; i < 9; ++i){
+		checkBinary(i);
+	}
+	
 	system("pause");
 	return 0;
 }
